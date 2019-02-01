@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/vue"> </script>
+       
+        
+    </head>
+    <body>
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+Home
+    </a>
+     <a class="navbar-item" href="#">
+About Us
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+       <div id="app">
+           <h1> Product Name: {{product}} </h1>
+           <h1> Websites Sources: </h1>
+           <ul>
+           <li v-for="source in sources"> <a >{{source}}</a> </li> <!--looping through an object arry vuejs --> 
+           </ul>
+           <h2> Sizes of Decks: </h2>
+           <ul> 
+               <li v-for="size in sizes"> {{size}} </li>
+           </ul>
+           <button v-on:click="addToCart"> add cart </button>
+           <button v-on:click="removeCart"> Remove </button>
+           <div class="cart">
+           <p> Cart({{cart}}) </p>
+           </div>
+       </div>
+    </body>
+</html>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js">

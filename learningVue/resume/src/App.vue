@@ -4,7 +4,7 @@
  <div>
     <navbar/>
  </div>
-    <img src='./assets/fabian-grohs-597395-unsplash.jpg'/>
+        <img src='./assets/fabian-grohs-597395-unsplash.jpg'/>
     <information work-experience="I have worked as a Software Developer"/>
   </div>
 </template>
@@ -33,4 +33,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@import "~bulma/css/bulma.css";
+
 </style>
